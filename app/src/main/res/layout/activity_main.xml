@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/anhnen">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <VideoView
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="300dp">
+
+            </VideoView>
+            <Button
+                android:id="@+id/btnplay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="playvideo">
+
+            </Button>
+        </LinearLayout>
+</androidx.viewpager.widget.ViewPager>
+        <com.google.android.material.tabs.TabLayout
+
+            android:id="@+id/tabLayout"
+            app:tabIndicatorColor="@color/colorMauGoc"
+            app:tabSelectedTextColor="@color/colorDoiMau"
+            app:tabTextColor="@color/colorMauGoc"
+            app:tabMode="fixed"
+            app:tabIndicatorHeight="2dp"
+            android:background="@color/colorTieuDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTieuDe">#f99f1a</color>
+    <color name="colorMauGoc">#FAF7F7</color>
+    <color name="colorDoiMau">#000000</color>
+    <color name="colorTrongSuot">#00FDFCFC</color>
+
+</resources>
