@@ -8,7 +8,13 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/anhnen">
+        >
+        <ProgressBar
+            android:id="@+id/prBar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,24 +25,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="1">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-            <VideoView
-                android:id="@+id/videoview"
-                android:layout_width="match_parent"
-                android:layout_height="300dp">
 
-            </VideoView>
-            <Button
-                android:id="@+id/btnplay"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="playvideo">
-
-            </Button>
-        </LinearLayout>
 </androidx.viewpager.widget.ViewPager>
         <com.google.android.material.tabs.TabLayout
 
